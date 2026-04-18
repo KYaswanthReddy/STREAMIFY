@@ -5,9 +5,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 const PORT=process.env.PORT;
 
+import {connectDB} from "./lib/db.js";
+
 
 app.listen(PORT,()=>{
     console.log(`http://localhost:${PORT}  is running  `);
+    connectDB();
 });
 
 import authRoutes from "./routes/auth.route.js";

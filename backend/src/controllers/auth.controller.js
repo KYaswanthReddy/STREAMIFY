@@ -10,6 +10,6 @@ export   async function login   (req, res)  {
 //     res.send("logout   mmmm");
 // };  
 
-export async function logout(req, res) {
+export function logout(req, res) {
     res.send("logout   mmmm");
 };  
